@@ -1,0 +1,169 @@
+.pota-dashboard-block {
+  margin: 24px 0;
+  background: #006400;
+  border: 2px solid #000000;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.pota-dashboard-block .pota-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.pota-dashboard-block .pota-header-text h2 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.pota-dashboard-block .pota-header-sub {
+  font-size: 1rem;
+  font-style: italic;
+  color: #ffffff;
+}
+
+.pota-dashboard-block .pota-header-logo img {
+  height: 150px;
+  width: auto;
+  display: block;
+  transition: transform 0.2s ease;
+  margin: -10px;
+}
+
+.pota-dashboard-block .pota-header-logo img:hover {
+  transform: scale(1.05);
+}
+
+.pota-dashboard-block .pota-loading,
+.pota-dashboard-block .pota-empty {
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  color: #475569;
+}
+
+.pota-dashboard-block .pota-table-wrapper {
+  overflow-x: auto;
+  border: 1px solid #000000;
+  border-radius: 8px;
+}
+
+.pota-dashboard-block .pota-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  background: #ffffff;
+}
+
+.pota-dashboard-block .pota-table th {
+  background-color: #1e293b;
+  color: #f8fafc;
+  padding: 12px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.pota-dashboard-block .pota-table th:hover {
+  background-color: #334155;
+}
+
+.pota-dashboard-block .pota-table th::after {
+  content: " ↕";
+  font-size: 1rem;
+  opacity: 0.75;
+}
+
+.pota-dashboard-block .pota-table th.asc::after {
+  content: " ↑";
+  opacity: 1;
+  color: #38bdf8;
+}
+
+.pota-dashboard-block .pota-table th.desc::after {
+  content: " ↓";
+  opacity: 1;
+  color: #38bdf8;
+}
+
+.pota-dashboard-block .pota-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.pota-dashboard-block .pota-table tr:last-child td {
+  border-bottom: none;
+}
+
+.pota-dashboard-block .pota-table tr:hover td {
+  background-color: #f8fafc;
+}
+
+.pota-dashboard-block a.pota-call-link {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.pota-dashboard-block a.pota-call-link:hover .pota-badge-callsign {
+  background-color: #0284c7;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.pota-dashboard-block .pota-badge-callsign {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 6px;
+  background-color: #e0f2fe;
+  color: #0369a1;
+  border: 1px solid #bae6fd;
+  transition: all 0.15s ease-in-out;
+}
+
+.pota-dashboard-block .pota-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.pota-dashboard-block .pota-badge-act {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.pota-dashboard-block .pota-badge-hunt {
+  background-color: #fef3c7;
+  color: #b45309;
+}
+
+.pota-editor-preview {
+  border: 2px dashed #94a3b8;
+}
+
+/* Total Row Styling */
+.pota-dashboard-block .pota-table tfoot .pota-total-row td {
+  background-color: #f1f5f9;
+  border-top: 2px solid #cbd5e1;
+  border-bottom: none;
+  font-weight: 700;
+  color: #0f172a;
+  font-size: 0.95rem;
+}
+
+.pota-dashboard-block .pota-table tfoot .pota-total-row:hover td {
+  background-color: #e2e8f0;
+}
